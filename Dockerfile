@@ -1,5 +1,6 @@
 # ---- Build stage ----
 FROM eclipse-temurin:17-jdk-jammy AS builder
+LABEL maintainer="your_email@example.com" 
 WORKDIR /app
 COPY . .
 RUN chmod +x mvnw && ./mvnw clean package -DskipTests
