@@ -64,7 +64,7 @@ jobs:
     - name: Build, tag, and push image to Amazon ECR
       env:
         ECR_REGISTRY: 605863933397.dkr.ecr.ap-southeast-1.amazonaws.com # 수정 []포함 내용 삭제후 생성된  registry 입력
-	    ECR_REPOSITORY: user09-cluster-repo
+        ECR_REPOSITORY: user09-cluster-repo
         IMAGE_TAG: ${{ github.sha }}
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
