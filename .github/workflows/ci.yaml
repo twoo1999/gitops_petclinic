@@ -1,4 +1,7 @@
 # 워크플로우의 이름을 정의합니다.
+permissions:
+  contents: write
+
 name: Build, Push, and Update Deployment
 
 # 워크플로우를 트리거하는 이벤트를 정의합니다.
